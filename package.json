@@ -12,6 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^5.1.0",
 		"@inlang/paraglide-js": "^2.4.0",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.47.1",
@@ -25,5 +26,9 @@
 		"tailwindcss": "^4.1.14",
 		"typescript": "^5.9.3",
 		"vite": "^7.1.10"
+	},
+	"dependencies": {
+		"@fontsource/poppins": "^5.2.7",
+		"swiper": "^12.0.3"
 	}
 }

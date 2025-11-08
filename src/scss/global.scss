@@ -1,3 +1,8 @@
+// Responsive manager
 @use 'screenshift/scss';
 
+// Shared stuff : vars, typos, mixins and etc...
 @use 'shared';
+
+// Layout styles : header and footer basically
+@use 'layout';

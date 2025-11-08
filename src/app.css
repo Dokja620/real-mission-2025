@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "real-mission";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #36a9e2;
+  --color-base-200: oklch(53.53% 0.137 250.18);
+  --color-base-300: oklch(44% 0.11 240.79);
+  --color-base-content: oklch(100% 0 0);
+  --color-primary: oklch(74.55% 0.180 125.30);
+  --color-primary-content: oklch(13% 0.028 261.692);
+  --color-secondary: #ffee00;
+  --color-secondary-content: oklch(13% 0.028 261.692);
+  --color-accent: oklch(77% 0.152 181.912);
+  --color-accent-content: oklch(38% 0.063 188.416);
+  --color-neutral: oklch(14% 0.005 285.823);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(53% 0.157 131.589);
+  --color-info-content: oklch(98% 0.003 247.858);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}

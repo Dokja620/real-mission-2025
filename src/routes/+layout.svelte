@@ -4,9 +4,14 @@
   import favicon from "$lib/assets/logo.webp";
 
   // Fonts
+  // Poppins
   import "@fontsource/poppins/400.css";
   import "@fontsource/poppins/500.css";
+  import "@fontsource/poppins/600.css";
   import "@fontsource/poppins/700.css";
+  // Noto Serif
+  import "@fontsource-variable/noto-serif";
+
   import Header from "$lib/layout/header.svelte";
 
   let { children } = $props();

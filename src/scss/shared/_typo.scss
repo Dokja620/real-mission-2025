@@ -1,5 +1,12 @@
 @use 'screenshift/scss' as mq;
 
+@font-face {
+  font-family: 'Arsilon';
+  src: url('/fonts/Arsilon.otf');
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Poppins';
   font-weight: 400;

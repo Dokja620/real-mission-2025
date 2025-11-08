@@ -1,7 +1,7 @@
 @use '../shared' as *;
 
 header {
-  padding: $spacing;
+  padding: $spacing $spacing-lg;
 }
 
 nav {

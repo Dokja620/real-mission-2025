@@ -1,0 +1,44 @@
+@use '../shared' as *;
+
+#hero {
+  padding: $spacing-lg;
+
+  .content {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('../../lib/assets/media/home/hero.webp') top center/cover no-repeat;
+    padding: $spacing;
+    border-radius: $spacing;
+    min-height: calc(100vh - 200px);
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    h1 {
+      font-family: 'Noto Serif Variable', serif;
+      font-weight: 500;
+      max-width: 20ch;
+      margin: 0 auto;
+      text-shadow: 0 0 10px #000, 0 0 20px #000;
+    }
+
+    h2 {
+      color: var(--color-secondary);
+      font-family: 'Arsilon';
+      font-weight: 400;
+      text-shadow: 0 0 10px #000, 0 0 20px #000;
+    }
+  }
+
+  .cta {
+    display: flex;
+    gap: $spacing;
+    justify-content: center;
+
+    a,
+    button {
+      font-weight: 600;
+      box-shadow: 0 0 10px #000, 0 0 20px #000;
+    }
+
+  }
+}

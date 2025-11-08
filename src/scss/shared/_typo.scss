@@ -1,0 +1,136 @@
+@use 'screenshift/scss' as mq;
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+::placeholder,
+button,
+input,
+textarea {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 4.21rem;
+
+  /* 67.36px */
+  @include mq.max-mq("desktop") {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 3.158rem;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem;
+  /* 21.28px */
+}
+
+p,
+a,
+::placeholder,
+summary,
+button {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+  /* 12px */
+}
+
+* {
+
+  @include mq.max-mq("tablet") {
+
+    // Styles for ≤ 1024px
+    h1 {
+      font-size: 2.489rem;
+      /* 39.84px */
+    }
+
+    h2 {
+      font-size: 2.074rem;
+      /* 33.12px */
+    }
+
+    h3 {
+      font-size: 1.728rem;
+      /* 27.68px */
+    }
+
+    h4 {
+      font-size: 1.440rem;
+      /* 23.04px */
+    }
+
+    h5 {
+      font-size: 1.200rem;
+      /* 19.2px */
+    }
+
+    small {
+      font-size: 0.833rem;
+      /* 13.28px */
+    }
+  }
+
+  @include mq.max-mq("mobile-lg") {
+    h1 {
+      font-size: 1.6rem;
+      /* 23.04px */
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      /* 20.48px */
+    }
+
+    h3 {
+      font-size: 1.139rem;
+      /* 18.24px */
+    }
+
+    h4 {
+      font-size: 1.012rem;
+      /* 16.16px */
+    }
+
+    h5 {
+      font-size: 0.900rem;
+      /* 14.4px */
+    }
+
+    small {
+      font-size: 0.711rem;
+      /* 11.36px */
+    }
+  }
+}

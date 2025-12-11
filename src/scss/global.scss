@@ -10,6 +10,9 @@
 // Home page sections styles
 @use 'home';
 
+// Gallery page sections styles
+@use 'gallery';
+
 main {
   display: grid;
   gap: shared.$spacing-xxl;

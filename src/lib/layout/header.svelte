@@ -12,7 +12,7 @@
 
     <ul class="nav-links">
       <li>
-        <a href="/">Gallerie</a>
+        <a href="/gallerie">Gallerie</a>
       </li>
     </ul>
 

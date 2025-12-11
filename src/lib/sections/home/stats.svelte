@@ -22,7 +22,6 @@
 
   let targetNode = $state<HTMLElement>()!;
   const inViewport = new IsInViewport(() => targetNode);
-  $inspect(inViewport);
 </script>
 
 <section id="stats">

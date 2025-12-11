@@ -9,3 +9,8 @@
 
 // Home page sections styles
 @use 'home';
+
+main {
+  display: grid;
+  gap: shared.$spacing-xxl;
+}

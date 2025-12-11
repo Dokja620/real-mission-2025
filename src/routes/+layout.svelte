@@ -13,6 +13,7 @@
   import "@fontsource-variable/noto-serif";
 
   import Header from "$lib/layout/header.svelte";
+  import Footer from "$lib/layout/footer.svelte";
 
   let { children } = $props();
 </script>
@@ -22,4 +23,9 @@
 </svelte:head>
 
 <Header />
-{@render children()}
+
+<main>
+  {@render children()}
+</main>
+
+<Footer />

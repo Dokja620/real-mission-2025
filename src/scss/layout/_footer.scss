@@ -1,0 +1,27 @@
+@use '../shared' as *;
+
+footer {
+  background: var(--color-base-300);
+  padding: $spacing-xxl $spacing;
+  text-align: center;
+
+  .content {
+    display: grid;
+    gap: $spacing-lg;
+  }
+
+  .foot {
+    max-width: 65ch;
+    margin: 0 auto;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-lg;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}

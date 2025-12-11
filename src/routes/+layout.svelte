@@ -26,6 +26,5 @@
 
 <main>
   {@render children()}
+  <Footer />
 </main>
-
-<Footer />

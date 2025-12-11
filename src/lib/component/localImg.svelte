@@ -1,14 +1,17 @@
 <script lang="ts">
-  import { FxReveal as Img } from "@zerodevx/svelte-img";
+  import { FxReveal } from "@zerodevx/svelte-img";
   let { src, alt = "madarent gallery" } = $props();
+  const Img: any = FxReveal;
 </script>
 
-<Img class="local-img" {src} {alt} />
+<div class="local-img">
+  <Img {src} {alt} />
+</div>
 
 <style>
   :global(.local-img) {
-    width: 640px;
-    height: 480px;
+    width: 100%;
+    height: auto;
 
     /* These CSS vars (with their default values) are exposed */
     --reveal-transform: scale(1.02);

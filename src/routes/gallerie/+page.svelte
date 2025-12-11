@@ -10,19 +10,19 @@
       name: m.gallery_agri_name(),
       desc: m.gallery_agri_desc(),
       img: agri,
-      link: "/test001",
+      link: "/gallerie/agriculture",
     },
     {
       name: m.gallery_edu_name(),
       desc: m.gallery_edu_desc(),
       img: edu,
-      link: "/test002",
+      link: "/gallerie/education",
     },
     {
       name: m.gallery_school_name(),
       desc: m.gallery_school_desc(),
       img: school,
-      link: "/test003",
+      link: "/gallerie/school",
     },
   ];
 </script>

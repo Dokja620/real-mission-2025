@@ -4,6 +4,7 @@
   import { onMount } from "svelte";
   import { Splide, SplideSlide, SplideTrack } from "@splidejs/svelte-splide";
   import LocalImg from "$lib/component/localImg.svelte";
+  import { m } from "$lib/paraglide/messages.js";
 
   import img01 from "$lib/assets/media/swiper/001.webp?as=sm";
   import img02 from "$lib/assets/media/swiper/002.webp?as=sm";
@@ -17,57 +18,57 @@
   const splide = [
     {
       img: img01,
-      h3: "NOTRE VISION",
-      h4: "| UNE DES ORGANISATIONS LES PLUS PROLIFIQUES POUR L’ENVOI DE MISSIONNAIRES EN AFRIQUE.",
-      p: "Dieu exhorte tous les chrétiens pour être intégrés dans sa divine vision, et gagner son objectif. Toutes les actions entreprises soient accomplies dans l’authenticité, dans l’honnêteté et à travers l’intégrité.",
+      h3: m.carousel_slide1_h3(),
+      h4: m.carousel_slide1_h4(),
+      p: m.carousel_slide1_p(),
     },
     {
       img: img02,
-      h3: "NOS MISSIONS",
-      h4: "| DIFFUSER L'EVANGILE AU SEIN DE LA SOCIETE. MOBILISER  L’EGLISE POUR FORMER DES DISCIPLES",
-      p: "L’évangélisation, et le discipôlat sont les fondements de la mission. C’est ce qu’on appelle « L’EMINENTE MISSION » accomplir celle-ci est la raison d’être et la raison de vivre des chrétiens. ",
+      h3: m.carousel_slide2_h3(),
+      h4: m.carousel_slide2_h4(),
+      p: m.carousel_slide2_p(),
     },
     {
       img: img03,
-      h3: "LA FINALITE",
-      h4: "| CHAQUE CHRETIEN DEVRAIT SE TRANSFORMER  EN DISCIPLE MISSIONNAIRE",
-      p: "Lorsque les chrétiens s’approprient et mettent en pratique l’évangile, le plan de Dieu s’accomplit plus rapidement. En ce sens, la responsabilité des chrétiens est à la fois lourde et cruciale. ",
+      h3: m.carousel_slide3_h3(),
+      h4: m.carousel_slide3_h4(),
+      p: m.carousel_slide3_p(),
     },
     {
       img: img04,
-      h3: "NOTRE PHILOSOPHIE",
-      h4: "| MALAGASY PRECHE L’EVANGILE AU PEUPLE MALAGASY, SOUTENU PAR DES MALAGASY ET PRÔNE L’ENTRE AIDE",
-      p: "Les Malagasy prêchent l’évangile au peuple malagasy. La mission est soutenue par les Malagasy, et promeut la solidarité et l’entraide.",
+      h3: m.carousel_slide4_h3(),
+      h4: m.carousel_slide4_h4(),
+      p: m.carousel_slide4_p(),
     },
     {
       img: img05,
-      h3: "NOTRE APPROCHE",
-      h4: "| UN PROCESSUS DE DEVELOPPEMENT HOLISTIQUE, BASE SUR LES VALEURS BIBLIQUES ET ADAPTE A LA CULTURE MALAGASY",
-      p: "Les missionnaires occidentaux, porteurs de l’Évangile à Madagascar, ont apporté la lumière. Ils ont accompli leurs responsabilités, et les églises malagasy déploient les efforts nécessaires pour assurer la continuité. ‘On ne peut pas bâtir une maison avec une seule main’, chaque soutien est donc le bienvenu. Real Mission Movement valorise le travail d’équipe et accueille chaleureusement tout partenariat.",
+      h3: m.carousel_slide5_h3(),
+      h4: m.carousel_slide5_h4(),
+      p: m.carousel_slide5_p(),
     },
     {
       img: img06,
-      h3: "IMPACT",
-      h4: "| PROCESSUS DE DEVELOPPEMENT HOLISTIQUE ADAPTE AUX VALEURS MALAGASY",
-      p: "L’Évangile constituera une valeur fondamentale de l’identité malagasy, se transmettant de génération en génération et garantissant un développement harmonieux et durable pour la nation.",
+      h3: m.carousel_slide6_h3(),
+      h4: m.carousel_slide6_h4(),
+      p: m.carousel_slide6_p(),
     },
     {
       img: img07,
-      h3: "LE BUT",
-      h4: "| PROCESSUS DE DEVELOPPEMENT HOLISTIQUE ADAPTE AUX VALEURS MALAGASY",
-      p: "Promouvoir une transformation positive, incluant un changement de mentalité, de méthode et de comportement.",
+      h3: m.carousel_slide7_h3(),
+      h4: m.carousel_slide7_h4(),
+      p: m.carousel_slide7_p(),
     },
     {
       img: img08,
-      h3: "EFFETS ATTENDUS",
-      h4: "Effet 1 :",
-      p: "Chaque ménage s’approprie l’évangile et l’utilise pour prendre des décisions favorisant la croissance et l’épanouissement durable de chaque membre de la famille.",
+      h3: m.carousel_slide8_h3(),
+      h4: m.carousel_slide8_h4(),
+      p: m.carousel_slide8_p(),
     },
     {
       img: img08,
-      h3: "EFFETS ATTENDUS",
-      h4: "Effet 2 :",
-      p: "L’évangile est adopté par les leaders à tous les niveaux comme un outil de leadership et de gestion pour le développement communautaire.",
+      h3: m.carousel_slide9_h3(),
+      h4: m.carousel_slide9_h4(),
+      p: m.carousel_slide9_p(),
     },
   ];
 

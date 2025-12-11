@@ -3,23 +3,24 @@
   import edu from "$lib/assets/media/gall/Education/001.webp?as=xs";
   import school from "$lib/assets/media/gall/School/001.webp?as=xs";
   import LocalImg from "$lib/component/localImg.svelte";
+  import { m } from "$lib/paraglide/messages.js";
 
   const galleries = [
     {
-      name: "Agriculture",
-      desc: "Agriculture de real mission qui contribue au truc",
+      name: m.gallery_agri_name(),
+      desc: m.gallery_agri_desc(),
       img: agri,
       link: "/test001",
     },
     {
-      name: "Education",
-      desc: "Education de real mission qui contribue au truc",
+      name: m.gallery_edu_name(),
+      desc: m.gallery_edu_desc(),
       img: edu,
       link: "/test002",
     },
     {
-      name: "School of Real Mission",
-      desc: "School de real mission qui contribue au truc",
+      name: m.gallery_school_name(),
+      desc: m.gallery_school_desc(),
       img: school,
       link: "/test003",
     },
@@ -29,8 +30,8 @@
 <section id="gallery">
   <div class="content">
     <div class="title" data-screenshift>
-      <h3>Notre gallerie photos</h3>
-      <h5>Missions, Pelerinage, etc</h5>
+      <h3>{m.gallery_title()}</h3>
+      <h5>{m.gallery_subtitle()}</h5>
     </div>
 
     <div class="list" data-screenshift>

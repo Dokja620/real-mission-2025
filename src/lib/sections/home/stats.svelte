@@ -1,22 +1,23 @@
 <script lang="ts">
   import { IsInViewport } from "runed";
+  import { m } from "$lib/paraglide/messages.js";
 
   const stats = [
     {
       numbers: "009",
-      label: "Antennes",
+      label: m.stats_label1(),
     },
     {
       numbers: "300",
-      label: "Membres",
+      label: m.stats_label2(),
     },
     {
       numbers: "100",
-      label: "Sites visités",
+      label: m.stats_label3(),
     },
     {
       numbers: "008",
-      label: "Missions réalisées",
+      label: m.stats_label4(),
     },
   ];
 

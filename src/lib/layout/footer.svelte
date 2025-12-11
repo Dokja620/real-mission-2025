@@ -1,22 +1,23 @@
 <script>
   import Icon from "@iconify/svelte";
+  import { m } from "$lib/paraglide/messages.js";
 
   const social = [
     {
       name: "facebook",
-      label: "Real Mission Movement",
+      label: m.footer_title(),
       icon: "logos:facebook",
       link: "",
     },
     {
       name: "whatsapp",
-      label: "Real Mission Movement",
+      label: m.footer_title(),
       icon: "logos:whatsapp-icon",
       link: "",
     },
     {
       name: "gmail",
-      label: "Real Mission Movement",
+      label: m.footer_title(),
       icon: "skill-icons:gmail-light",
       link: "",
     },
@@ -26,12 +27,8 @@
 <footer>
   <div class="content" data-screenshift>
     <div class="foot">
-      <h5>Real Mission Movement</h5>
-      <p>
-        Our 7-day mission experiences are a full immersion into the heart of
-        service. You'll spend a week engaging with local communities, partnering
-        with outreach ...
-      </p>
+      <h5>{m.footer_title()}</h5>
+      <p>{m.footer_desc()}</p>
     </div>
     <div class="social">
       {#each social as item, index}
@@ -43,7 +40,7 @@
     <div class="links"></div>
 
     <small class="copyright">
-      (c) 2025 fait avec ♥ par Ohayo Dev & Design
+      {m.footer_copyright()}
     </small>
   </div>
 </footer>

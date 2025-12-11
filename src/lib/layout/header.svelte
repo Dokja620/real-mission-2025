@@ -2,17 +2,18 @@
   import { setLocale } from "$lib/paraglide/runtime";
   import Icon from "@iconify/svelte";
   import logo from "$lib/assets/media/logo.webp";
+  import { m } from "$lib/paraglide/messages.js";
 </script>
 
 <header>
   <nav>
     <a class="logo" href="/" aria-label="Go home link">
-      <img src={logo} alt="Real Mission mouvement logo" />
+      <img src={logo} alt={m.header_logo_alt()} />
     </a>
 
     <ul class="nav-links">
       <li>
-        <a href="/gallerie">Gallerie</a>
+        <a href="/gallerie">{m.header_gallery()}</a>
       </li>
     </ul>
 

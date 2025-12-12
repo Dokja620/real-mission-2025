@@ -1,37 +1,39 @@
 <script lang="ts">
-  import { page } from '$app/state';
-  import LocalImg from '$lib/component/localImg.svelte';
-  import { m } from '$lib/paraglide/messages.js';
+  import { page } from "$app/state";
+  import LocalImg from "$lib/component/localImg.svelte";
 
   export const prerender = true;
 
   let category = $derived(page.params.category);
-  let folder = $derived(category ? category.charAt(0).toUpperCase() + category.slice(1) : '');
+  let folder = $derived(
+    category ? category.charAt(0).toUpperCase() + category.slice(1) : "",
+  );
 
   // Glob all gallery images
-  const allImages = import.meta.glob('/src/lib/assets/media/gall/*/*.webp', { eager: true, query: '?as=lg&url', import: 'default' });
-  console.log('All images keys:', Object.keys(allImages));
+  const allImages = import.meta.glob("/src/lib/assets/media/gall/*/*.webp", {
+    eager: true,
+    query: "?as=lg&url",
+    import: "default",
+  });
 
   let images = $derived(() => {
     if (!folder) return [];
     const imgs = Object.keys(allImages)
-      .filter(path => path.includes(`/${folder}/`))
-      .map(path => ({
+      .filter((path) => path.includes(`/${folder}/`))
+      .map((path) => ({
         src: allImages[path],
-        alt: path.split('/').pop().replace(/\.(webp|jpg)$/i, ''),
-        path
+        alt: path
+          .split("/")
+          .pop()
+          .replace(/\.(webp|jpg)$/i, ""),
+        path,
       }));
-    console.log('Images for', folder, ':', imgs);
     return imgs;
   });
 </script>
 
 <section id="gallery-category">
   <div class="content">
-    <div class="title" data-screenshift>
-      <h3>{folder} Gallery</h3>
-    </div>
-
     <div class="grid" data-screenshift>
       {#each images() as img, i}
         <div class="item" data-index={i}>
@@ -57,3 +59,4 @@
     pointer-events: none;
   }
 </style>
+

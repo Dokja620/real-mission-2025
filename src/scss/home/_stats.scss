@@ -1,4 +1,5 @@
 @use '../shared' as *;
+@use 'screenshift/scss' as mq;
 
 #stats {
   .content {
@@ -6,6 +7,21 @@
     text-align: center;
     gap: calc($spacing-xxl * 2);
     justify-content: space-evenly;
+
+    @include mq.max-mq("small-tablet") {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $spacing;
+
+      .stat:last-of-type {
+        grid-column: span 2;
+      }
+
+      h1 {
+        font-size: 2rem;
+
+      }
+    }
   }
 
   .stat {
@@ -22,6 +38,10 @@
 
       :nth-child(3) {
         animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .4s forwards, falling-opacity .5s ease-in-out .4s forwards;
+      }
+
+      :nth-child(4) {
+        animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .4s forwards, falling-opacity .5s ease-in-out .5s forwards;
       }
 
       span {

@@ -10,7 +10,11 @@
     </div>
 
     <div class="cta">
-      <a href="mailto:" class="btn btn-primary" target="_blank">
+      <a
+        href="mailto:realmissionmovement@gmail.com"
+        class="btn btn-primary"
+        target="_blank"
+      >
         {m.hero_cta_contact()}
       </a>
       <a

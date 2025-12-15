@@ -7,19 +7,19 @@
       name: "facebook",
       label: m.footer_title(),
       icon: "logos:facebook",
-      link: "",
+      link: "https://web.facebook.com/profile.php?id=100076285151329",
     },
     {
       name: "whatsapp",
       label: m.footer_title(),
       icon: "logos:whatsapp-icon",
-      link: "",
+      link: "https://wa.link/k0w9an",
     },
     {
       name: "gmail",
       label: m.footer_title(),
       icon: "skill-icons:gmail-light",
-      link: "",
+      link: "mailto:realmissionmovement@gmail.com",
     },
   ];
 </script>

@@ -4,19 +4,15 @@
 
   const stats = [
     {
-      numbers: "009",
-      label: m.stats_label1(),
-    },
-    {
-      numbers: "300",
+      numbers: "+50",
       label: m.stats_label2(),
     },
     {
-      numbers: "100",
+      numbers: "+20",
       label: m.stats_label3(),
     },
     {
-      numbers: "008",
+      numbers: "+200",
       label: m.stats_label4(),
     },
   ];

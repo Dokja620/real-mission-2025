@@ -1,4 +1,5 @@
 @use '../shared' as *;
+@use 'screenshift/scss' as mq;
 
 #carousel {
   .splide-item {
@@ -6,15 +7,28 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: $spacing-lg;
+
+    @include mq.max-mq("tablet") {
+      grid-template-columns: 1fr;
+      gap: $spacing;
+    }
   }
 
   .splide__pagination {
     width: 50%;
+
+    @include mq.max-mq("tablet") {
+      width: 100%;
+    }
   }
 
   .wrap {
     border-radius: $spacing;
     height: 400px;
+
+    @include mq.max-mq("tablet") {
+      height: 200px;
+    }
 
     img {
       object-fit: cover;

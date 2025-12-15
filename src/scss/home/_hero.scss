@@ -1,4 +1,5 @@
 @use '../shared' as *;
+@use 'screenshift/scss' as mq;
 
 #hero {
   padding: $spacing-lg;
@@ -26,6 +27,10 @@
       font-family: 'Arsilon';
       font-weight: 400;
       text-shadow: 0 0 10px #000, 0 0 20px #000;
+    }
+
+    @include mq.max-mq("tablet") {
+      min-height: 50vh;
     }
   }
 

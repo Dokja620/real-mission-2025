@@ -10,6 +10,7 @@
     padding: $spacing;
     border-radius: $spacing;
     min-height: calc(100vh - 200px);
+    max-width: 100%;
     display: grid;
     place-content: center;
     text-align: center;
@@ -36,6 +37,7 @@
 
   .cta {
     display: flex;
+    flex-wrap: wrap;
     gap: $spacing;
     justify-content: center;
 

@@ -3,23 +3,14 @@
 
 #stats {
   .content {
-    display: flex;
-    text-align: center;
-    gap: calc($spacing-xxl * 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $spacing;
     justify-content: space-evenly;
 
     @include mq.max-mq("small-tablet") {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: $spacing;
-
-      .stat:last-of-type {
-        grid-column: span 2;
-      }
-
       h1 {
-        font-size: 2rem;
-
+        font-size: 1.85rem;
       }
     }
   }

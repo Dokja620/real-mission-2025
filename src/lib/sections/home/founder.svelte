@@ -1,5 +1,5 @@
 <script>
-  import founder from "$lib/assets/media/home/found.webp";
+  import founder from "$lib/assets/media/home/found.webp?as=sm";
   import LocalImg from "$lib/component/localImg.svelte";
   import { m } from "$lib/paraglide/messages.js";
 </script>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="image">
-      <img src={founder} alt="Founder name" />
+      <LocalImg src={founder} alt="Founder name" />
     </div>
   </div>
 </section>

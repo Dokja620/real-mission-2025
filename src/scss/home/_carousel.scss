@@ -2,15 +2,19 @@
 @use 'screenshift/scss' as mq;
 
 #carousel {
+  margin-top: $spacing-xxl;
+
   .splide-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     gap: $spacing-lg;
 
     @include mq.max-mq("tablet") {
-      grid-template-columns: 1fr;
-      gap: $spacing;
+      display: block;
+
+      .wrap {
+        margin-top: $spacing-lg;
+      }
     }
   }
 
@@ -19,12 +23,16 @@
 
     @include mq.max-mq("tablet") {
       width: 100%;
+
+      .wrap {
+        height: 100%;
+      }
     }
   }
 
   .wrap {
     border-radius: $spacing;
-    height: 400px;
+    height: 350px;
 
     @include mq.max-mq("tablet") {
       height: 200px;

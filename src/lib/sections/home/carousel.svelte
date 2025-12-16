@@ -14,6 +14,7 @@
   import img06 from "$lib/assets/media/swiper/006.webp?as=sm";
   import img07 from "$lib/assets/media/swiper/007.webp?as=sm";
   import img08 from "$lib/assets/media/swiper/008.webp?as=sm";
+  import img09 from "$lib/assets/media/swiper/009.webp?as=sm";
 
   const splide = [
     {
@@ -65,7 +66,7 @@
       p: m.carousel_slide8_p(),
     },
     {
-      img: img08,
+      img: img09,
       h3: m.carousel_slide9_h3(),
       h4: m.carousel_slide9_h4(),
       p: m.carousel_slide9_p(),
@@ -104,7 +105,11 @@
       <div style="position: relative">
         <SplideTrack>
           {#each splide as item, index}
-            <SplideSlide class="splide-item" data-index={index}>
+            <SplideSlide
+              class="splide-item"
+              data-splide-interval="4000"
+              data-index={index}
+            >
               <div class="text">
                 <h3>{item.h3}</h3>
                 <h5>{item.h4}</h5>

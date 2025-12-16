@@ -19,13 +19,17 @@
 
   let targetNode = $state<HTMLElement>()!;
   const inViewport = new IsInViewport(() => targetNode);
+  $inspect(inViewport.current);
 </script>
 
 <section id="stats">
   <div class="content" data-screenshift>
     {#each stats as stat, i}
       <div class="stat" data-index={i}>
-        <h1 bind:this={targetNode} class={inViewport ? "is-in-view" : ""}>
+        <h1
+          bind:this={targetNode}
+          class={inViewport.current ? "is-in-view" : ""}
+        >
           {#each String(stat.numbers).split("") as char, index}
             <span data-key={index}>{char}</span>
           {/each}
